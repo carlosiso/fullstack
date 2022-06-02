@@ -1,0 +1,142 @@
+/* ----desktop------ */
+
+body {
+  background: linear-gradient(180deg, #fcbd2e, black);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: iron;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 46.9px 0px;
+  text-align: center;
+}
+@font-face {
+  font-family: iron;
+  src: url("/arquivos/maiden.ttf");
+}
+
+hr {
+  width: 944px auto;
+  height: 10px;
+  background-color: black;
+  border: none;
+}
+
+.grid {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  margin: 60px auto;
+  gap: 5px;
+  border: 3px solid red;
+  justify-content: center;
+  height: 1400;
+  align-content: start;
+}
+
+.box {
+  background: black;
+  padding: 30px;
+  border-radius: 5px;
+}
+#box4 {
+  background: rgb(103, 11, 11);
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.box h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box span {
+  color: #fcbd2e;
+  font-weight: 700;
+}
+
+.box p {
+  color: #b2b2b2;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
+}
+
+.box span {
+  color: #febe01;
+  font-weight: 700;
+}
+
+.box a {
+  padding: 10px;
+  background: #febe01;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.box a:hover {
+  background: black;
+  color: #febe01;
+  border: 1px solid #febe01;
+}
+
+/* <-----Tablet-------> */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px auto;
+    gap: 5px;
+  }
+  #box3 {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 2px auto;
+    font-size: 50px;
+  }
+}
+
+/* <----Mobile-----> */
+
+@media (max-width: 768px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    gap: 5px;
+  }
+  #box3 {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 2px auto;
+    font-size: 50px;
+  }
+
+  hr {
+    width: 80%;
+    height: 10px;
+    background-color: black;
+    border: none;
+  }
+
+  border {
+    background: linear-gradient(180deg, #f1f1f1, black);
+    background-attachment: fixed;
+  }
+}

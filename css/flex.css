@@ -1,0 +1,18 @@
+.flex {
+  height: 900px;
+  background: rgb(249, 249, 133);
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  background: rgb(119, 2, 2);
+  color: aqua;
+  flex-grow: 1;
+  flex-basis: 100px;
+  font-size: 30px;
+  font-weight: 800;
+}
