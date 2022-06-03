@@ -2,20 +2,22 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-size: 60px;
-  color: rgb(240, 28, 28);
+  font-size: 80px;
+  color: rgb(245, 68, 68);
   font-family: iron;
+  letter-spacing: 7px;
+  text-shadow: 1px 1px 4px #444444;
 }
 
 @font-face {
-  font-family: iron;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   src: url("/arquivos/maiden.ttf");
 }
 
 hr {
   width: 60%;
   height: 15px;
-  background: orangered;
+  background: rgb(250, 168, 138);
 }
 
 .texto {
